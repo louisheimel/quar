@@ -1,4 +1,23 @@
 header ul,
+li a {
+  color: $color-2; 
+  text-decoration: none;
+}
+
+header ul,
 header ul li {
   display: inline-block;
+}
+
+header ul:first-of-type li:nth-of-type(2):before {
+  content: '|';
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 0 5px;
+  position: relative;
+  top: 2px;
+}
+
+header ul:first-of-type {
+  float: right;
 }
