@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quar</title>
+</head>
+<body>
+  <header>
+    <ul>
+      <li>Login</li>
+      <li>Register</li>
+    </ul>
+    <div class="shoppingcart"></div>
+    <ul>
+      <li>Products</li>
+      <li>Support</li>
+      <li>More</li>
+    </ul>
+    <img id="logo" src="quar-assets/logo-quar.svg" alt="QUAR">
+    <input type="text">
+    <div id="jumbotron"></div>
+    </header>
+  <main>
+    <ul>
+      <li id="road-tri-cyclo">
+        <img src="quar-assets/three-bicyclists.png" alt="three bicyclists">
+        <div>
+          <p>Road / Triathalon / Cyclo-cross</p>
+          <p>Power Meters</p>
+        </div>
+      </li>
+      <li id="mountain">
+        <img src="quar-assets/mountain-biker.png" alt="mountain biker">
+        <div>
+          <p>Mountain Bikes</p>
+          <p>Power Meters</p>
+        </div>
+      </li>
+      <li id="accessories">
+        <img src="quar-assets/bike-meter.png" alt="bike meter">
+        <div>
+          <p>Accessories</p>
+        </div>
+      </li>
+    </ul>
+    <div id="locator">
+      <img class="logo-icon" src="quar-assets/icon-q.svg" alt="QUAR icon">
+      <h1>Dealer / Coach Locator</h1>
+      <p>Use the search below to locate a dealer, coach or both.  International visitors, enter your full address</p>
+      <form action="/location" method="get">
+        <label for="location">Location:</label>
+        <input id="location" type="text" placeholder="City and State or Zip Code">
+        <label for="distance">Distance:</label>
+        <select id="distance" name="distance">
+          <option value="10">10 Miles</option>
+          <option value="20">20 Miles</option>
+          <option value="30">30 Miles</option>
+          <option value="40">40 Miles</option>
+          <option value="50">50 Miles</option>
+        </select>
+        <fieldset>
+          <legend>Show:</legend>
+          <label for="dealers">Dealers</label>
+          <input type="radio" name="professionaltype" value="Dealers" id="dealers">
+          <label for="coaches">Coaches</label>
+          <input type="radio" name="professionaltype" value="Coaches" id="coaches">
+          <label for="both">Both</label>
+          <input type="radio" name="professionaltype" value="Both" id="both">
+        </fieldset>
+        <button type="submit">Find Dealer/Coach<img src="quar-assets/double-right-arrows.png" alt="double arrows"/></button>
+      </form>
+    </div>
+    <div id="university">
+      <img class="logo-icon" src="quar-assets/icon-q.svg" alt="QUAR icon">
+      <h1>University</h1>
+      <ul>
+        <li>
+          <div>
+            <img src="quar-assets/bicyclist-video.png" alt="bicyclist video placeholder">
+            <p>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</p><br>
+            <p class="date">May 11th, 2012</p>
+            <div>
+              <span class="paren">(</span>
+                <ul>
+                  <li><a href="#">Racing</a></li>
+                  <li><a href="#">Power Meters</a></li>
+                  <li><a href="#">Crank Set</a></li>
+                </ul>
+              <span class="paren">)</span>
+            </div>
+            <span>Skill: <a href="#">Advanced</a></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="quar-assets/windows-browser.png" alt="windows browser">
+            <p>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</p>
+            <p class="date">May 11th, 2012</p>
+            <div>
+              <span class="paren">(</span>
+                <ul>
+                  <li><a href="#">Racing</a></li>
+                  <li><a href="#">Power Meters</a></li>
+                  <li><a href="#">Crank Set</a></li>
+                </ul>
+              <span class="paren">)</span>
+            </div>
+            <span>Skill: <a href="#">Beginner</a></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="news">
+      <img class="logo-icon" src="quar-assets/icon-q.svg" alt="QUAR icon">
+      <h1>News</h1>
+      <ul>
+        <li>
+          <p>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</p>
+          <p class="date">May 11th, 2012</p>
+          <div>
+            <span class="paren">(</span>
+              <ul>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Power Meters</a></li>
+                <li><a href="#">Crank Set</a></li>
+              </ul>
+            <span class="paren">)</span>
+          </div>
+        </li>
+        <li>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p class="date">May 8th, 2012</p>
+          <div>
+            <span class="paren">(</span>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">New Product</a></li>
+              </ul>
+            <span class="paren">)</span>
+          </div>
+
+        </li>
+        <li>
+          <p>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</p>
+          <p class="date">May 11th, 2012</p>
+          <div>
+            <span class="paren">(</span>
+              <ul>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Power Meters</a></li>
+                <li><a href="#">Crank Set</a></li>
+              </ul>
+            <span class="paren">)</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="teamsandathletes">
+      <img class="logo-icon" src="quar-assets/icon-q.svg" alt="QUAR icon">
+      <h1>Teams / Athletes</h1>
+      <img src="quar-assets/cycling-team.png" alt="cycling team">
+    </div>
+    <div id="community">
+      <img class="logo-icon" src="quar-assets/icon-q.svg" alt="QUAR icon">
+      <h1>Community</h1>
+      <ul>
+        <li><a href="#" class="active">Twitter</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+      <div>
+        <div>
+          <p><a href="#">#ATOC</a> Stage 2 Power analysis is up! More power <a href="#">@theboz91</a>, <a href="#">@TrainingPeaks</a>, <a href="#">@quar</a>, <a href="#">@SRAMontheroad.</a>..</p>
+          <span>7 hours ago</span>
+        </div>
+        <div>
+          <p>Quar Red power meter looks good in person. Come buy one.</p><br>
+          <p><a href="#">http://twitpic.com/9l5vv0</a> <a href="#">http://twitpic.com/9l5vv5</a></p>
+          <span>May 15th, 2012</span>
+        </div>
+        <div>
+          <p>BB30 RED <a href="#">@sramontheroad</a> <a href="#">@quam</a> in the house!! 520g drive side, 172.5 & 175 crank length in stock</p>
+          <span>May 12th, 2012</span>
+        </div>
+      </div>
+      <a href="#"><img src="#" alt="follow us on twitter"></a>
+    </div>
+  </main>
+  <footer>
+    <div class="links">
+      <h1>Products</h1>
+      <ul>
+        <li>Power Meters</li>
+        <li>Accessories</li>
+      </ul>
+      <h1>Support</h1>
+      <h1>Blog</h1>
+      <ul>
+        <li>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li>Quisque nunc mauris, vehicula in, ultrices tempor, imperdiet.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      </ul>
+      <h1>More</h1>
+      <img src="bg-footer-gear.png" alt="gear">
+    </div>
+    <div class="info">
+      <div id="copyright">
+        <p>Copyright 2017</p>
+      </div>
+      <div>
+        <p>Quar Technology</p>
+        <p>1234 Anywhere St. Minneapolis, MN 55401</p>
+      </div>
+      <div id="phonenumbers">
+        <p>Toll Free: 1-800-555-1234</p>
+        <p>International: 1-555-123-2222</p>
+      </div>
+      <div id="icons">
+        <ul>
+          <li>
+            <a href=""><img src="" alt="twitter"></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="instagram"></a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="youtube"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>
