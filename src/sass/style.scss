@@ -1,0 +1,22 @@
+@import 'base/reset';
+@import 'abstracts/variables/colors';
+@import 'abstracts/variables/fonts';
+@import 'abstracts/variables/widths';
+@import 'components/header';
+@import 'components/logo';
+
+
+body {
+  background-color: $primary-color;
+  font-family: $main;
+  width: 100%;
+}
+
+header,
+main,
+footer {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+
