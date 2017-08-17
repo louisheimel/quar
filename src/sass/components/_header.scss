@@ -76,7 +76,7 @@ header {
     margin-right: 40px;
   }
   .links li a {
-    color: black;
+    color: $main-links-color;
     text-transform: uppercase;
   }
   #jumbotron {
@@ -91,6 +91,9 @@ header {
     margin: 10px 5px;
     display: inline-block;
     background-color: #b8b8b8;
+  }
+  #jumbotron img {
+    width: $desktop-width;
   }
   #jumbotron div.active {
     background-color: red;
