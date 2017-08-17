@@ -129,7 +129,10 @@ main {
       main .devices li div p:nth-of-type(2) {
         font-weight: 600; }
   main #locator {
-    background-color: gray; }
+    background-color: gray;
+    width: 383px;
+    height: 261px;
+    float: right; }
 
 #logo {
   width: 250px;
