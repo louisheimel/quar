@@ -1,6 +1,7 @@
 header {
   width: $desktop-width;
   margin: 0 auto;
+  clear: both;
   ul,
   li a {
     color: $color-2;
@@ -28,13 +29,14 @@ header {
 
   div ul { 
     margin-top: 10px;
+    font-size: 14px;
   }
 
   .shoppingcart { 
     margin-top: 5px;
     width: 89px;
     float: right;
-    margin-left: 50px;
+    margin-left: (105px / 1114px) * 1114px;
     span {
       color: $color-2;
       font-size: 15px;
@@ -44,13 +46,53 @@ header {
     }
   }
 
-  ul:first-of-type {
+  div ul:first-of-type {
     float: right;
   }
 
   #logo {
     display: block;
     margin-left: (1114px - 250px) / 2;
+    width: 1114px * (113px / 506px);
   }
 
+  input {
+    float:right;
+    border: none;
+    width: (202px / 1114px) * 1114px;
+    height: (37px / 1114px) * 1114px;
+    background-color: #f6f6f6;
+    position: relative;
+    bottom: 37px;
+  }
+
+  .links {
+    float: left;
+    position: relative;
+    top: 39px;
+  }
+  
+  .links li {
+    margin-right: 40px;
+  }
+  .links li a {
+    color: black;
+    text-transform: uppercase;
+  }
+  #jumbotron {
+    display: table;
+    content: "";
+    clear: both;
+    text-align: center;
+  }
+  #jumbotron div {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px;
+    display: inline-block;
+    background-color: #b8b8b8;
+  }
+  #jumbotron div.active {
+    background-color: red;
+  }
 }

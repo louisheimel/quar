@@ -37,7 +37,8 @@ table {
 
 header {
   width: 1114px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  clear: both; }
   header ul,
   header li a {
     color: #b2b2b2;
@@ -54,23 +55,81 @@ header {
     width: 100%;
     height: 35px; }
   header div ul {
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-size: 14px; }
   header .shoppingcart {
     margin-top: 5px;
     width: 89px;
     float: right;
-    margin-left: 50px; }
+    margin-left: 105px; }
     header .shoppingcart span {
       color: #b2b2b2;
       font-size: 15px;
       position: relative;
       bottom: 6px;
       padding-left: 2px; }
-  header ul:first-of-type {
+  header div ul:first-of-type {
     float: right; }
   header #logo {
     display: block;
-    margin-left: 432px; }
+    margin-left: 432px;
+    width: 248.77866px; }
+  header input {
+    float: right;
+    border: none;
+    width: 202px;
+    height: 37px;
+    background-color: #f6f6f6;
+    position: relative;
+    bottom: 37px; }
+  header .links {
+    float: left;
+    position: relative;
+    top: 39px; }
+  header .links li {
+    margin-right: 40px; }
+  header .links li a {
+    color: black;
+    text-transform: uppercase; }
+  header #jumbotron {
+    display: table;
+    content: "";
+    clear: both;
+    text-align: center; }
+  header #jumbotron div {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px;
+    display: inline-block;
+    background-color: #b8b8b8; }
+  header #jumbotron div.active {
+    background-color: red; }
+
+main {
+  padding: 40px 0 0 0; }
+  main .devices li {
+    color: #fff;
+    width: 222px;
+    height: 261px;
+    float: left;
+    background-color: red;
+    margin: 0 25px 0 0; }
+    main .devices li img {
+      width: 100%; }
+    main .devices li div {
+      line-height: 1.5;
+      width: 194px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-top: 5px;
+      text-align: center;
+      font-size: 14px; }
+      main .devices li div p:nth-of-type(1) {
+        font-weight: lighter; }
+      main .devices li div p:nth-of-type(2) {
+        font-weight: 600; }
+  main #locator {
+    background-color: gray; }
 
 #logo {
   width: 250px;
@@ -85,8 +144,7 @@ header,
 main,
 footer {
   width: 1114px;
-  margin: 0 auto;
-  border: 1px solid black; }
+  margin: 0 auto; }
 
 .logo-icon {
-  width: 25px; }
+  width: 113px; }

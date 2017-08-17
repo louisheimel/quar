@@ -3,6 +3,7 @@
 @import 'abstracts/variables/fonts';
 @import 'abstracts/variables/widths';
 @import 'components/header';
+@import 'components/main';
 @import 'components/logo';
 
 
@@ -17,11 +18,9 @@ main,
 footer {
   width: $desktop-width;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .logo-icon {
-  width: 25px;
+  width: 506px * (113px / 506px);
 }
-
 
