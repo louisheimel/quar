@@ -109,6 +109,10 @@ header {
 
 main {
   padding: 40px 0 0 0; }
+  main:after {
+    content: "";
+    display: table;
+    clear: both; }
   main .devices li {
     color: #fff;
     width: 222px;
@@ -202,6 +206,15 @@ main {
       left: 85px; }
       main #locator a img {
         margin-left: 2px; }
+  main #university,
+  main #news,
+  main #teamsandathletes,
+  main #community {
+    width: 548px;
+    height: 262px;
+    float: left;
+    clear: both;
+    overflow: hidden; }
 
 #logo {
   width: 250px;
@@ -221,3 +234,6 @@ footer {
 .logo-icon {
   width: 26px;
   margin-left: 30px; }
+
+footer {
+  clear: both; }
