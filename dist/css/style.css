@@ -151,10 +151,12 @@ main {
       display: block;
       align: left;
       margin-top: 22px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
       font-size: 14px;
       line-height: 21px;
       color: black; }
+    main #locator label[for="location"] {
+      letter-spacing: .2px; }
     main #locator input[type="text"] {
       width: 260px;
       height: 25px;
@@ -170,9 +172,36 @@ main {
         color: black; }
       main #locator input[type="text"]::placeholder {
         color: black; }
-  main .logo-icon {
-    width: 26px;
-    margin-left: 30px; }
+    main #locator label[for="distance"] {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 3px; }
+    main #locator #distance {
+      position: relative;
+      bottom: 1px; }
+    main #locator fieldset {
+      margin-top: 15px;
+      margin-left: 19.5px; }
+      main #locator fieldset label:first-of-type {
+        font-size: inherit; }
+      main #locator fieldset input[type="radio"] {
+        position: relative;
+        bottom: 1px; }
+      main #locator fieldset label {
+        display: inline-block;
+        font-size: 12px;
+        position: relative;
+        bottom: 1px; }
+    main #locator a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      position: relative;
+      top: 15px;
+      left: 85px; }
+      main #locator a img {
+        margin-left: 2px; }
 
 #logo {
   width: 250px;
@@ -190,4 +219,5 @@ footer {
   margin: 0 auto; }
 
 .logo-icon {
-  width: 113px; }
+  width: 26px;
+  margin-left: 30px; }

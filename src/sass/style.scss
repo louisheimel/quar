@@ -23,6 +23,6 @@ footer {
 }
 
 .logo-icon {
-  width: 506px * (113px / 506px);
+  width: $little-icon-width;
+  margin-left: 30px;
 }
-
