@@ -230,12 +230,64 @@ main {
       border: 1px solid black;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      background-color: #c7c7c7; }
+      background-color: #eeeeee; }
     main #university li:nth-of-type(2),
     main #news li:nth-of-type(2),
     main #teamsandathletes li:nth-of-type(2),
     main #community li:nth-of-type(2) {
       margin-top: 16px; }
+  main #university li {
+    padding: 18px;
+    border: 1px solid #d7d7d7; }
+    main #university li > div > span {
+      position: relative;
+      bottom: 75px;
+      left: 130px; }
+      main #university li > div > span a {
+        text-decoration: none;
+        color: red; }
+    main #university li img {
+      width: 123px;
+      height: 70px;
+      display: inline-block;
+      border: 1px solid #d7d7d7; }
+    main #university li ul {
+      margin-left: -4px;
+      margin-right: -4px; }
+      main #university li ul li:first-of-type a:after,
+      main #university li ul li:nth-of-type(2):after {
+        content: ',';
+        color: black; }
+    main #university li span {
+      font-size: 13px; }
+  main #university li:first-of-type ul li:first-of-type a:after {
+    content: ',';
+    color: #ffbf00; }
+  main #university p {
+    display: inline-block;
+    font-size: 14px;
+    width: 370px;
+    position: relative;
+    bottom: 45px; }
+  main #university p:nth-of-type(2) {
+    left: 130px; }
+  main #university div div {
+    position: relative;
+    bottom: 90px;
+    left: 231px; }
+    main #university div div ul {
+      display: inline-block; }
+      main #university div div ul li {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border: none; }
+        main #university div div ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 14px; }
 
 #logo {
   width: 250px;
