@@ -207,6 +207,38 @@ main {
         color: black; }
       main #locator input[type="text"]::placeholder {
         color: black; }
+    main #locator label[for="location"] {
+      letter-spacing: .2px; }
+    main #locator label[for="distance"] {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 3px; }
+    main #locator #distance {
+      position: relative;
+      bottom: 1px; }
+    main #locator fieldset {
+      margin-top: 15px;
+      margin-left: 19.5px; }
+      main #locator fieldset label:first-of-type {
+        font-size: inherit; }
+      main #locator fieldset input[type="radio"] {
+        position: relative;
+        bottom: 1px; }
+      main #locator fieldset label {
+        display: inline-block;
+        font-size: 12px;
+        position: relative;
+        bottom: 1px; }
+    main #locator a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-weight: bolder;
+      position: relative;
+      top: 15px;
+      left: 85px; }
+      main #locator a img {
+        margin-left: 2px; }
   main #university li {
     padding: 18px;
     border: 1px solid #d7d7d7; }
