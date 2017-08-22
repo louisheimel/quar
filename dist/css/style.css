@@ -377,6 +377,10 @@ footer {
   width: 1124px;
   margin: 0 auto; }
 
+#news,
+#community {
+  margin-left: 28px; }
+
 .logo-icon {
   width: 26px;
   margin-left: 30px; }
