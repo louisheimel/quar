@@ -142,7 +142,7 @@ main {
     width: 548px;
     height: 264px;
     float: left;
-    clear: both;
+    display: inline-block;
     overflow: hidden;
     margin-top: 42px; }
     main #university h1,
@@ -239,58 +239,128 @@ main {
       left: 85px; }
       main #locator a img {
         margin-left: 2px; }
-  main #university li {
-    padding: 18px;
-    border: 1px solid #d7d7d7; }
-    main #university li > div > span {
+  main #university {
+    overflow: visible; }
+    main #university li:first-of-type div:first-of-type li:first-of-type a:first-of-type:after {
+      content: ",";
+      color: #ffbf00; }
+    main #university > img, main #university h1 {
       position: relative;
-      bottom: 75px;
-      left: 130px; }
-      main #university li > div > span a {
-        text-decoration: none;
-        color: red; }
-    main #university li img {
-      width: 123px;
-      height: 70px;
-      display: inline-block;
-      border: 1px solid #d7d7d7; }
-    main #university li ul {
-      margin-left: -4px;
-      margin-right: -4px; }
-      main #university li ul li:first-of-type a:after,
-      main #university li ul li:nth-of-type(2):after {
-        content: ',';
-        color: black; }
-    main #university li span {
-      font-size: 13px; }
-  main #university li:first-of-type ul li:first-of-type a:after {
-    content: ',';
-    color: #ffbf00; }
-  main #university p {
-    display: inline-block;
-    font-size: 14px;
-    width: 370px;
-    position: relative;
-    bottom: 45px; }
-  main #university p:nth-of-type(2) {
-    left: 130px; }
-  main #university div div {
-    position: relative;
-    bottom: 90px;
-    left: 231px; }
-    main #university div div ul {
-      display: inline-block; }
-      main #university div div ul li {
+      left: 165px; }
+    main #university img {
+      bottom: 8px; }
+    main #university h1 {
+      text-transform: uppercase;
+      font-size: 18px;
+      bottom: 12px; }
+    main #university li {
+      font-size: 15px;
+      clear: both;
+      overflow: hidden;
+      border: 1px solid #c7c7c7; }
+      main #university li div img {
+        margin: 19px 8px 21px 15px;
+        display: inline-block; }
+      main #university li div p {
+        width: 370px;
+        line-height: 18px;
+        color: #666;
         display: inline-block;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        border: none; }
-        main #university div div ul li a {
+        position: relative;
+        bottom: 57px; }
+      main #university li div .date {
+        margin-left: 148px;
+        bottom: 55px;
+        font-size: 12px;
+        color: #b2b2b2; }
+      main #university li div div {
+        position: relative;
+        bottom: 73.5px;
+        left: 238px;
+        width: 500px; }
+        main #university li div div span {
+          position: relative;
+          font-size: 12px;
+          color: #b2b2b2;
+          margin: -3.5px;
+          bottom: 0; }
+        main #university li div div ul {
+          display: inline;
+          position: relative; }
+          main #university li div div ul li:first-of-type a:after,
+          main #university li div div ul li:nth-of-type(2) a:after {
+            content: ','; }
+          main #university li div div ul li {
+            border: none;
+            display: inline; }
+            main #university li div div ul li a {
+              font-size: 12px;
+              text-decoration: none;
+              color: black; }
+      main #university li div span {
+        position: relative;
+        left: 148px;
+        bottom: 70px;
+        font-size: 12.5px; }
+        main #university li div span a {
+          color: red;
           text-decoration: none;
-          color: black;
-          font-size: 14px; }
+          font-size: 12px;
+          position: relative;
+          bottom: 0.5px; }
+        main #university li div span.paren {
+          left: 0; }
+  main #news {
+    overflow: visible;
+    border: none; }
+    main #news img, main #news h1 {
+      position: relative;
+      bottom: 8px;
+      left: 174px; }
+    main #news h1 {
+      font-size: 18px;
+      bottom: 12px;
+      text-transform: uppercase; }
+    main #news ul > li {
+      border: none;
+      border-bottom: 1px solid #c7c7c7; }
+    main #news span.paren {
+      color: #c7c7c7; }
+    main #news ul li:nth-of-type(2) p:nth-of-type(1) {
+      padding-top: 9px; }
+    main #news ul li:nth-of-type(3) p:nth-of-type(1) {
+      padding-top: 22px; }
+    main #news ul li:nth-of-type(3) {
+      border-bottom: none; }
+    main #news ul li {
+      height: 70px;
+      background-color: #fff; }
+      main #news ul li p {
+        color: #666;
+        font-size: 15px;
+        margin-top: 3px; }
+        main #news ul li p:nth-of-type(2) {
+          font-size: 12px;
+          color: #c7c7c7;
+          margin-top: 8px; }
+      main #news ul li span {
+        font-size: 12px; }
+      main #news ul li ul {
+        margin: 0 -5px;
+        display: inline; }
+        main #news ul li ul li {
+          font-size: 12px;
+          display: inline;
+          border: none; }
+          main #news ul li ul li:first-of-type a:after, main #news ul li ul li:nth-of-type(2) a:after {
+            content: ','; }
+          main #news ul li ul li a {
+            text-decoration: none;
+            color: black; }
+    main #news ul ul, main #news span.paren {
+      position: relative;
+      left: 90px;
+      bottom: 15px; }
 
 #logo {
   width: 250px;
@@ -306,6 +376,10 @@ main,
 footer {
   width: 1124px;
   margin: 0 auto; }
+
+#news,
+#community {
+  margin-left: 28px; }
 
 .logo-icon {
   width: 26px;
