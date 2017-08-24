@@ -443,6 +443,8 @@ footer .links {
     position: relative;
     bottom: 154px;
     left: 757px; }
+  footer .links h1 {
+    color: red; }
 
 body {
   background-color: #fff;
