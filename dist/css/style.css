@@ -438,6 +438,11 @@ footer .links {
   height: 204px;
   background-color: #333333;
   color: #fff; }
+  footer .links img {
+    height: 204px;
+    position: relative;
+    bottom: 154px;
+    left: 757px; }
 
 body {
   background-color: #fff;
