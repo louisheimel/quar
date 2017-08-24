@@ -370,6 +370,8 @@ main {
       position: relative;
       bottom: 10px;
       left: 135px; }
+    main #teamsandathletes img[alt="cycling team"] {
+      width: 548px; }
     main #teamsandathletes h1 {
       font-size: 18px;
       text-transform: uppercase;
