@@ -376,6 +376,7 @@ main {
       bottom: 13px; }
   main #community {
     overflow: visible;
+    font-size: 14px;
     height: 298px;
     background: url("../quar-assets/gray_clouds_2.svg") 100% no-repeat;
     background-size: 548px 287px;
@@ -391,6 +392,9 @@ main {
       left: 158px; }
     main #community h1 {
       bottom: 13px; }
+    main #community a {
+      color: red;
+      text-decoration: none; }
     main #community li {
       display: inline;
       position: relative;
