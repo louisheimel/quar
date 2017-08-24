@@ -415,7 +415,19 @@ main {
     main #community ul + div,
     main #community ul + div + a {
       position: relative;
-      top: 30px; }
+      top: 26px;
+      color: #666;
+      line-height: 18px;
+      padding-left: 10px; }
+    main #community span {
+      display: block;
+      font-style: italic;
+      font-size: 12px;
+      margin-bottom: 23px; }
+    main #community img {
+      position: relative;
+      left: 450px;
+      bottom: 12px; }
 
 #logo {
   width: 250px;
