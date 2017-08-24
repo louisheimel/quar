@@ -374,12 +374,34 @@ main {
       font-size: 18px;
       text-transform: uppercase;
       bottom: 13px; }
-  main #community li {
-    display: inline-block;
-    border: none;
-    width: 60px; }
-    main #community li a {
-      display: inline; }
+  main #community {
+    overflow: visible;
+    background: url("../quar-assets/clouds.svg") no-repeat;
+    background-size: 548px 230px; }
+    main #community h1 {
+      text-transform: uppercase;
+      font-size: 18px;
+      position: relative; }
+    main #community > img:first-of-type,
+    main #community h1 {
+      position: relative;
+      bottom: 10px;
+      left: 158px; }
+    main #community h1 {
+      bottom: 13px; }
+    main #community li {
+      display: inline-block;
+      border: none;
+      width: 60px;
+      height: 22px;
+      background-color: #fff; }
+      main #community li a {
+        display: inline;
+        text-decoration: none;
+        font-size: 18px;
+        color: #666; }
+      main #community li .active {
+        color: red; }
 
 #logo {
   width: 250px;
