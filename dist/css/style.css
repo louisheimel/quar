@@ -376,7 +376,7 @@ main {
       bottom: 13px; }
   main #community {
     overflow: visible;
-    background: url("../quar-assets/clouds.svg") no-repeat;
+    background: url("../quar-assets/gray_clouds_2.svg") no-repeat;
     background-size: 548px 287px; }
     main #community h1 {
       text-transform: uppercase;
