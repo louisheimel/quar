@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meye2web.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -144,7 +144,7 @@ main {
     float: left;
     display: inline-block;
     overflow: hidden;
-    margin-top: 42px; }
+    margin-top: 45px; }
     main #university h1,
     main #news h1,
     main #teamsandathletes h1,
@@ -361,6 +361,25 @@ main {
       position: relative;
       left: 90px;
       bottom: 15px; }
+  main #teamsandathletes {
+    margin-top: 45px;
+    overflow: visible;
+    position: relative;
+    height: 312px; }
+    main #teamsandathletes img:first-of-type, main #teamsandathletes h1 {
+      position: relative;
+      bottom: 10px;
+      left: 135px; }
+    main #teamsandathletes h1 {
+      font-size: 18px;
+      text-transform: uppercase;
+      bottom: 13px; }
+  main #community li {
+    display: inline-block;
+    border: none;
+    width: 60px; }
+    main #community li a {
+      display: inline; }
 
 #logo {
   width: 250px;
@@ -379,7 +398,8 @@ footer {
 
 #news,
 #community {
-  margin-left: 28px; }
+  margin-left: 28px;
+  height: 131px; }
 
 .logo-icon {
   width: 26px;
