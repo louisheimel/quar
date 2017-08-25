@@ -467,6 +467,10 @@ footer .links {
     position: relative;
     right: 17px; }
 
+footer .info {
+  margin-top: 22px;
+  border-top: 3px dotted #c7c7c7; }
+
 body {
   background-color: #fff;
   font-family: Helvetica;
