@@ -7,9 +7,23 @@ header {
     color: $color-2;
     text-decoration: none;
   }
-
   ul, li {
     display: inline-block;
+  }
+
+  img[alt="left-arrow"] {
+    width: 25px;
+    float: left;
+    position: relative;
+    top: 275px;;
+    right: 30px;
+  }
+  img[alt="right-arrow"] {
+    width: 25px;
+    float: right;
+    position: relative;
+    top: 275px;
+    left: 30px;
   }
 
   div ul li:nth-of-type(2):before {
@@ -90,7 +104,7 @@ header {
     display: inline-block;
     background-color: #b8b8b8;
   }
-  #jumbotron img {
+  #jumbotron img:nth-of-type(2) {
     width: $desktop-width;
   }
   #jumbotron div.active {
