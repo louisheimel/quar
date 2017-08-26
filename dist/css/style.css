@@ -484,7 +484,34 @@ footer { }
     footer .info div:first-of-type {
       margin-left: 0; }
     footer .info div:nth-of-type(2) {
-      margin-left: 500px; }
+      margin-left: 470px;
+      border-right: 1px solid gray;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-right: 35px; }
+    footer .info div:nth-of-type(3) {
+      margin-left: 30px;
+      border-right: 1px solid gray;
+      padding-right: 30px; }
+    footer .info div:nth-of-type(4) {
+      margin-right: 20px; }
+    footer .info img {
+      width: 17px; }
+    footer .info img[alt="youtube"] {
+      position: relative;
+      width: 30px;
+      right: 30px;
+      bottom: 15px; }
+    footer .info img[alt="twitter"] {
+      position: relative;
+      right: 35px;
+      bottom: 1px; }
+    footer .info img[alt="instagram"] {
+      position: relative;
+      bottom: 21px; }
+    footer .info #copyright + div p:first-of-type {
+      color: red;
+      font-weight: bold; }
 
 body {
   background-color: #fff;
