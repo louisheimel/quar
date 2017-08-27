@@ -148,6 +148,8 @@ main {
         font-weight: lighter; }
       main .devices li div p:nth-of-type(2) {
         font-weight: 600; }
+  main li:nth-of-type(3) div {
+    margin-top: 12px; }
   main #university,
   main #news,
   main #teamsandathletes,
