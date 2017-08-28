@@ -46,13 +46,15 @@ header {
     text-decoration: none; }
   header ul, header li {
     display: inline-block; }
-  header img[alt="left-arrow"] {
+  header #jumbotron img {
+    width: 100%; }
+  header #jumbotron img[alt="left-arrow"] {
     width: 25px;
     float: left;
     position: relative;
     top: 275px;
     right: 30px; }
-  header img[alt="right-arrow"] {
+  header #jumbotron img[alt="right-arrow"] {
     width: 25px;
     float: right;
     position: relative;
@@ -109,12 +111,6 @@ header {
     content: "";
     clear: both;
     text-align: center; }
-  header #jumbotron div {
-    width: 15px;
-    height: 15px;
-    margin: 10px 5px;
-    display: inline-block;
-    background-color: #b8b8b8; }
   header #jumbotron img:nth-of-type(2) {
     width: 1124px; }
   header #jumbotron div.active {

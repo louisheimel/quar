@@ -10,15 +10,17 @@ header {
   ul, li {
     display: inline-block;
   }
-
-  img[alt="left-arrow"] {
+  #jumbotron img {
+    width: 100%;
+  } 
+  #jumbotron img[alt="left-arrow"] {
     width: 25px;
     float: left;
     position: relative;
     top: 275px;;
     right: 30px;
   }
-  img[alt="right-arrow"] {
+  #jumbotron img[alt="right-arrow"] {
     width: 25px;
     float: right;
     position: relative;
@@ -97,13 +99,18 @@ header {
     clear: both;
     text-align: center;
   }
-  #jumbotron div {
-    width: 15px;
-    height: 15px;
-    margin: 10px 5px;
-    display: inline-block;
-    background-color: #b8b8b8;
-  }
+  //#jumbotron div {
+  //  &:nth-of-type(2),
+  //  &:nth-of-type(3),
+  //  &:nth-of-type(4),
+  //  &:nth-of-type(5) {
+  //    width: 15px;
+  //    height: 15px;
+  //    margin: 10px 5px;
+  //    display: inline-block;
+  //    background-color: #b8b8b8;
+  //  }
+  //}
   #jumbotron img:nth-of-type(2) {
     width: $desktop-width;
   }

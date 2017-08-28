@@ -4,7 +4,122 @@
   <meta charset="UTF-8">
   <title>Quar</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+	<script type="text/babel">
+    class ImageClicker extends React.Component {
+      handleClick = () => {
+        this.props.handleClick(this.props.id)
+      }
+      render() {
+        const styles = {
+          width: '13px',
+          height: '13px',
+          backgroundColor: this.props.active ? 'red' : '#c7c7c7',
+          display: 'inline-block',
+          margin: '13px 13px 0 auto',
+          position: 'relative',
+          left: '20px'
+        }
+        return (<div style={styles} onClick={this.handleClick}></div>);
+      }
+    }
+    class ImageChooser extends React.Component {
+      handleClick = (id) => {
+        this.props.handleClick(id)
+      }
+      isActiveIndex = (id) => {
+        return this.props.activeIndex === id;
+      }
+      render() {
+        return(
+          <div>
+            <ImageClicker id={0} active={this.isActiveIndex(0)} handleClick={this.handleClick} />
+            <ImageClicker id={1} active={this.isActiveIndex(1)} handleClick={this.handleClick}/>
+            <ImageClicker id={2} active={this.isActiveIndex(2)} handleClick={this.handleClick}/>
+            <ImageClicker id={3} active={this.isActiveIndex(3)} handleClick={this.handleClick}/>
+          </div>
+        );
+      }
+    }
+    class RightArrow extends React.Component {
+      render() {
+        const rightArrowStyles = {
+          width: '25px',
+          float: 'right',
+          position: 'relative',
+          left: '0px',
+          bottom: '550px'
+        }
+        return (<div style={rightArrowStyles} onClick={this.props.clickHandler} href="#"><img src="quar-assets/icon-arrow.svg" alt="right-arrow" /></div>);
+      }
+    }
+    class LeftArrow extends React.Component {
+      render() {
+        return (
+          <div href="#" onClick={this.props.clickHandler}><img src="quar-assets/arrow-left.svg" alt="left-arrow" /></div>
+        );
+      }
+
+    }
+		class Jumbotron extends React.Component {
+      constructor(props) {
+        super(props)
+        this.state = {
+          imageIndex: 0,
+        }
+      }
+      getCurrentImage = () => {
+        return this.props.imageLinks[this.state.imageIndex];
+      }
+      handleClick = (id) => {
+        this.setState({ imageIndex: id });
+        console.log('id is: ' + id)
+      }
+      handleLeftClick = () => {
+        this.setState({
+          imageIndex: (this.state.imageIndex + 3) % 4
+        })
+      }
+
+      handleRightClick = () => {
+        this.setState({
+          imageIndex: (this.state.imageIndex + 1) % 4
+        })
+      }
+			render() {
+        const styles = {};
+        const imgStyles = {
+          width: '100%',
+          display: 'block',
+        };
+        
+				return (
+          <div>
+            <LeftArrow clickHandler={this.handleLeftClick}/>
+            <img style={imgStyles} src={this.getCurrentImage()} />
+            <RightArrow clickHandler={this.handleRightClick}/>
+            <ImageChooser handleClick={this.handleClick} activeIndex={this.state.imageIndex}/>
+          </div>
+				);
+			}
+		}
+		ReactDOM.render(
+			<Jumbotron 
+        imageLinks = 
+          {[
+            "quar-assets/biker.png",
+            "http://via.placeholder.com/1124x516/red",
+            "http://via.placeholder.com/1124x516/green",
+            "http://via.placeholder.com/1124x516/blue"
+          ]}
+      />,
+      document.getElementById('jumbotron')
+		);
+	</script>
 </head>
+
 <body>
   <header>
     <div>
@@ -12,6 +127,7 @@
         <img src="quar-assets/shopping.png" alt="shopping cart">
         <span>(0 Items)</span>
       </div>
+			<div id="root"></div>
 
       <ul>
         <li><a href="#">Login</a></li><!--
@@ -25,15 +141,7 @@
     </ul>
     <img id="logo" src="quar-assets/logo-quar.svg" alt="QUAR">
     <input type="text">
-    <div id="jumbotron">
-      <a href="#"><img src="quar-assets/arrow-left.svg" alt="left-arrow"></a>
-      <a href="#"><img src="quar-assets/icon-arrow.svg" alt="right-arrow"></a>
-      <img src="quar-assets/biker.png" alt="biker">
-      <div class="active"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <div id="jumbotron"></div>
   </header>
   <main>
     <ul class="devices">
