@@ -72,6 +72,9 @@ header {
   header div ul {
     margin-top: 10px;
     font-size: 14px; }
+  header div ul:first-of-type {
+    position: relative;
+    bottom: 5px; }
   header .shoppingcart {
     margin-top: 5px;
     width: 89px;
@@ -88,19 +91,29 @@ header {
   header #logo {
     display: block;
     margin-left: 437px;
+    margin-bottom: -45px;
+    margin-top: 20px;
     width: 251.01186px; }
   header input {
     float: right;
+    padding-left: 7px;
     border: none;
-    width: 202px;
-    height: 37px;
+    width: 200px;
+    height: 30px;
     background-color: #f6f6f6;
     position: relative;
-    bottom: 37px; }
+    bottom: -10px; }
+  header input + img {
+    float: right;
+    position: relative;
+    top: 17px;
+    left: 200px; }
+  header input:focus + img {
+    display: none; }
   header .links {
     float: left;
     position: relative;
-    top: 39px; }
+    top: 58px; }
   header .links li {
     margin-right: 40px; }
   header .links li a {
@@ -509,16 +522,16 @@ footer { }
       width: 17px; }
     footer .info img[alt="youtube"] {
       position: relative;
-      width: 30px;
-      right: 30px;
-      bottom: 15px; }
+      width: 17px;
+      right: 35px;
+      bottom: 25px; }
     footer .info img[alt="twitter"] {
       position: relative;
       right: 35px;
-      bottom: 1px; }
+      bottom: 6px; }
     footer .info img[alt="instagram"] {
       position: relative;
-      bottom: 21px; }
+      bottom: 26px; }
     footer .info #copyright + div p:first-of-type {
       color: red;
       font-weight: bold; }

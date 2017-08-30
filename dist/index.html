@@ -7,7 +7,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-	<script type="text/babel">
+  <script type="text/babel">
+    // const debounce = (f, interval) => {
+    // }
     class ImageClicker extends React.Component {
       handleClick = () => {
         this.props.handleClick(this.props.id)
@@ -63,50 +65,55 @@
       }
 
     }
-		class Jumbotron extends React.Component {
+    class Jumbotron extends React.Component {
       constructor(props) {
         super(props)
         this.state = {
           imageIndex: 0,
+          numClicks: 0,
         }
       }
       getCurrentImage = () => {
         return this.props.imageLinks[this.state.imageIndex];
       }
+      tellClient = () => {
+        console.log(this.state.numClicks)
+      }
       handleClick = (id) => {
-        this.setState({ imageIndex: id });
-        console.log('id is: ' + id)
+        this.setState({ imageIndex: id, numClicks: this.state.numClicks + 1 }, this.tellClient);
       }
       handleLeftClick = () => {
         this.setState({
-          imageIndex: (this.state.imageIndex + 3) % 4
-        })
+          imageIndex: (this.state.imageIndex + 3) % 4,
+          numClicks: this.state.numClicks + 1,
+        }, this.tellClient)
       }
 
       handleRightClick = () => {
         this.setState({
-          imageIndex: (this.state.imageIndex + 1) % 4
-        })
+          imageIndex: (this.state.imageIndex + 1) % 4,
+          numClicks: this.state.numClicks + 1
+        }, this.tellClient)
       }
-			render() {
+      render() {
         const styles = {};
         const imgStyles = {
           width: '100%',
           display: 'block',
         };
         
-				return (
+        return (
           <div>
             <LeftArrow clickHandler={this.handleLeftClick}/>
             <img style={imgStyles} src={this.getCurrentImage()} />
             <RightArrow clickHandler={this.handleRightClick}/>
             <ImageChooser handleClick={this.handleClick} activeIndex={this.state.imageIndex}/>
           </div>
-				);
-			}
-		}
-		ReactDOM.render(
-			<Jumbotron 
+        );
+      }
+    }
+    ReactDOM.render(
+      <Jumbotron 
         imageLinks = 
           {[
             "quar-assets/biker.png",
@@ -116,10 +123,9 @@
           ]}
       />,
       document.getElementById('jumbotron')
-		);
-	</script>
+    );
+  </script>
 </head>
-
 <body>
   <header>
     <div>
@@ -127,7 +133,6 @@
         <img src="quar-assets/shopping.png" alt="shopping cart">
         <span>(0 Items)</span>
       </div>
-			<div id="root"></div>
 
       <ul>
         <li><a href="#">Login</a></li><!--
@@ -140,7 +145,10 @@
       <li><a href="#">More</a></li>
     </ul>
     <img id="logo" src="quar-assets/logo-quar.svg" alt="QUAR">
-    <input type="text">
+
+    <input id="search" type="text">
+
+    <img src="quar-assets/magnifier.png" />
     <div id="jumbotron"></div>
   </header>
   <main>
@@ -357,7 +365,7 @@
             <a href="#"><img src="quar-assets/instagram.svg" alt="instagram"></a>
           </li>
           <li>
-            <a href="#"><img src="quar-assets/youtube.svg" alt="youtube"></a>
+            <a href="#"><img src="quar-assets/youtubeimage.png" alt="youtube"></a>
           </li>
         </ul>
       </div>
